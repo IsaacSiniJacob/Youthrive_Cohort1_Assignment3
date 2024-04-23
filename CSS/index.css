@@ -1,0 +1,153 @@
+/* General */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header */
+header{
+    background-color: black;
+    width: 100%;
+    margin: 0px;
+    padding: 30px;
+    font-size: 30px;
+}
+
+a{
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 0 20px;
+}
+
+a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.current{
+    background-color: rgb(24, 31, 41);
+    border-radius: 5px;
+}
+
+/* Main */
+h1{
+    color: rgb(9, 51, 9);
+    font-size: 500%;
+    font-weight: bolder;
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+}
+
+h1:hover{
+    color: green;
+}
+
+h3{
+    font-size: 200%;
+    color: rgb(9, 51, 9);
+    margin: 0.5em 0.2rem;
+    padding: 0.5rem 0.2rem;
+}
+
+h3:hover{
+    color: green;
+}
+
+.image-container{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.image-container img{
+    width: 19.5%;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.image-container img:hover{
+    opacity: 0.8;
+    cursor: pointer;
+
+}
+
+/* Footer */
+footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 100px 0 0 0;
+    padding: 20px 0 20px 0;
+    color: whitesmoke;
+    font-size: 20px;
+    background-color: rgb(40, 42, 43);
+}
+
+
+@media screen and (max-width: 768px){
+    body{
+        background-color: whitesmoke;
+    }
+
+    .image-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .image-container img {
+        width: 80%;
+        margin: 10px 20px;
+    }
+
+    h1, h3{
+        color: purple;
+    }
+
+    h3{
+        font-size: 150%;
+        margin: 5px 15px;
+    }
+}
+
+
+@media screen and (max-width: 480px){
+    body{
+        background-color: #ddd;
+    }
+
+    a{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .current{
+        width: fit-content;
+    }
+    
+    .image-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .image-container img {
+        width: 99.5%;
+        margin: 10px auto;
+    }
+
+    h1, h3{
+        color: brown;
+    }
+
+    h3{
+        font-size: 150%;
+        margin: auto;
+    }
+}
+
+
